@@ -2,7 +2,9 @@
 
 **Phase 1, Domain 6: HR Policy Bot.** Upload an employee handbook, ask about leave, benefits or conduct rules, and check answers against the cited PDF pages.
 
-**Local inference requires Ollama and the `qwen3:4b-instruct` model.** Embeddings and reranking also run locally. The current build is verified locally. Hosting and repository publication are pending.
+**Local inference requires Ollama and the `qwen3:4b-instruct` model.** Embeddings and reranking also run locally. Submission uses Option B: GitHub repository only. Run the app locally using the instructions below.
+
+Repository: https://github.com/narendrasapare/policy-lens-ai
 
 ## Scope
 
@@ -180,18 +182,17 @@ From `frontend`, run `npm run build` and `npm run lint`. From `backend`:
 
 Tests cover PDF validation, duplicates, automatic preparation/recovery, persistent FAISS writes, routing, reranking, cited answers, and summary coverage across later pages. The current local checks passed: 60 backend tests, TypeScript/Vite build, ESLint and `pip check`. Live checks confirmed a multipart answer, an unsupported-question response, PDF page references, duplicate-upload readiness and a summary reading all 33 passages across the sample's 10 pages. The summary took approximately 42 seconds in one warm local run. Controlled tests do not replace live model checks.
 
-## Submission and deployment
+## Submission
 
-The shared submission guidelines accept either a hosted app plus GitHub, or an accessible GitHub repository with reproducible local instructions. Our intended route is **Vercel frontend + hosted Python backend + GitHub source**. See [deployment instructions](docs/DEPLOYMENT.md).
+This project uses **Option B: GitHub repository only**, as permitted by the shared submission guidelines for projects with heavier local infrastructure. No paid hosting or cloud model account is required for the default local setup. The repository can be cloned publicly without authentication.
 
-Before sending the links:
+Submit this link:
 
-- Make the repository public or explicitly share it with the instructor. The evaluated code is the main branch at submission time.
-- Add the actual hosted URL at the top of this README after deployment, then check upload, preparation, questions and source pages in an incognito window immediately before submission.
-- Check that no keys or private uploads are included in the repository or its history.
-- For a repo-only submission, have another person follow these instructions or test from a fresh clone and virtual environment; record the setup time.
+https://github.com/narendrasapare/policy-lens-ai
 
-Publication and a fresh-browser hosted test remain pending. No real deployment URL is claimed here. A fresh-clone/fresh-venv installation has not yet been timed against the repo-only 15-minute guideline.
+The evaluated code is the main branch at submission time. Keep keys and private uploads out of the repository and its history. Local setup requires Ollama, the configured model and the Python/Node dependencies described above; first-time downloads depend on the network and machine. A fresh-machine setup including uncached model downloads has not been timed against the 15-minute guideline.
+
+[Hosting instructions](docs/DEPLOYMENT.md) are optional future work and are not required for this repo-only submission.
 
 ## Project layout
 

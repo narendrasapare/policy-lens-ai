@@ -1,6 +1,6 @@
-# GitHub and Vercel deployment
+# Optional hosted deployment
 
-Our planned hosted submission consists of a working Vercel frontend URL and a GitHub source link. The shared guidelines also accept a repo-only submission with reproducible local setup. The Python API runs separately because it uses local model weights, a background worker and persistent PDF/FAISS files.
+The project is submitted using Option B: GitHub repository only. The steps below are optional future hosting instructions, not a requirement for the current submission. They are not a verified zero-cost hosting plan. A hosted submission would require a working frontend URL and GitHub source link. The Python API runs separately because it uses local model weights, a background worker and persistent PDF/FAISS files.
 
 ## 1. Publish the source
 
