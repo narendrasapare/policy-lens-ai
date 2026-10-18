@@ -1,0 +1,28 @@
+services:
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama-models:/root/.ollama
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      LLM_PROVIDER: ollama
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:4b-instruct}
+      OLLAMA_BASE_URL: http://ollama:11434
+      ALLOW_CLOUD_LLM: "false"
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+    volumes:
+      - policy-data:/app/data
+      - policy-evidence:/app/evaluations
+      - huggingface-cache:/root/.cache/huggingface
+    depends_on:
+      - ollama
+volumes:
+  ollama-models:
+  policy-data:
+  policy-evidence:
+  huggingface-cache:

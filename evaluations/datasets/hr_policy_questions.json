@@ -1,0 +1,86 @@
+[
+  {
+    "id": "hr-001",
+    "category": "factual",
+    "question": "What is the minimum annual paid vacation employees should take?",
+    "reference": "Employees should take a minimum of two weeks of paid vacation annually, totaling 10 business days.",
+    "expected_pages": [8]
+  },
+  {
+    "id": "hr-002",
+    "category": "factual",
+    "question": "What happens when a scheduled payroll date falls on a weekend?",
+    "reference": "Payroll is administered twice monthly, on the 15th and final day. When either date falls on a weekend, payroll is administered on the preceding Friday.",
+    "expected_pages": [5]
+  },
+  {
+    "id": "hr-003",
+    "category": "factual",
+    "question": "What proportion of health insurance premiums does the organization pay?",
+    "reference": "The company pays 80 percent of the health insurance premium and employees pay 20 percent through payroll deductions.",
+    "expected_pages": [6]
+  },
+  {
+    "id": "hr-004",
+    "category": "factual",
+    "question": "Who must pre-approve a work expense totaling more than $1,000?",
+    "reference": "An expenditure totaling more than $1,000, including cumulative expenses such as subscriptions, must be pre-approved by the Board of Directors and Executive Director.",
+    "expected_pages": [6]
+  },
+  {
+    "id": "hr-005",
+    "category": "factual",
+    "question": "What information is required when filing an expense reimbursement request?",
+    "reference": "A reimbursement request goes to the Executive Director and includes receipts as an image or PDF, an expense category, and a short description of each expense.",
+    "expected_pages": [7]
+  },
+  {
+    "id": "hr-006",
+    "category": "factual",
+    "question": "How much of the planned operating budget is reserved for professional development?",
+    "reference": "The organization endeavors to set aside at least 2.0 percent of its planned operating budget for professional development.",
+    "expected_pages": [7]
+  },
+  {
+    "id": "hr-007",
+    "category": "factual",
+    "question": "During which hours are employees expected to be accessible by phone, Slack, and email?",
+    "reference": "Team members should be reasonably accessible by phone, Slack, and email from 11 AM to 4 PM in their local time zone.",
+    "expected_pages": [8]
+  },
+  {
+    "id": "hr-008",
+    "category": "factual",
+    "question": "How far in advance should employees seek permission for time off?",
+    "reference": "An employee needs supervisor permission at least five business days in advance, should place travel dates on their work calendar, and should notify the team.",
+    "expected_pages": [8]
+  },
+  {
+    "id": "hr-009",
+    "category": "factual",
+    "question": "How long should daily standup meetings last?",
+    "reference": "Daily standups should each last no longer than 15 minutes.",
+    "expected_pages": [9]
+  },
+  {
+    "id": "hr-010",
+    "category": "factual",
+    "question": "Who should employees contact to report workplace harassment or policy violations?",
+    "reference": "Employees should promptly report violations to the Executive Director, Chair, Vice Chair, or Treasurer of the Board of Directors, escalating to another designated person if the response is unsatisfactory.",
+    "expected_pages": [3]
+  },
+  {
+    "id": "hr-011",
+    "category": "multi_part",
+    "question": "How many paid vacation days do employees get, and what percentage of insurance premiums does the company pay?",
+    "reference": "Employees should take at least 10 business days of paid vacation a year, and the company pays 80 percent of the health insurance premium.",
+    "expected_pages": [8, 6]
+  },
+  {
+    "id": "hr-012",
+    "category": "unanswerable",
+    "question": "Does the policy manual offer employees a free gym membership?",
+    "reference": "The uploaded policy manual does not specify a free gym membership benefit.",
+    "expected_pages": []
+  }
+]
